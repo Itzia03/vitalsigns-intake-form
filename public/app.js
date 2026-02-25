@@ -1,10 +1,10 @@
-const form = document.getElementById('patientForm');
+const form = document.getElementById('InfoP');
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    
+
     const data = Object.fromEntries(formData.entries());
     const response = await fetch('/api/register-patient', {
         method: 'POST',
