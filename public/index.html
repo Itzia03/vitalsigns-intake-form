@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Patient Registration</h2>
+        <form id="InfoP">
+            <fieldset>
+                
+                <!--Full Name-->
+                <div class="form-group">
+                    <label for="user-name">Full name: </label>
+                    <input type="text" id="user-name" name="fullName" placeholder="Emily Sarah Smith" required>
+                </div>
+                <!--email-->
+                <div class="form-group">
+                    <label for="user-email">Email: </label>
+                    <input type="email" id="user-email" name="email" required>
+                </div>
+                <!--contraseña-->
+                <div class="form-group">
+                    <label for="user-password">Password: </label>
+                    <input type="password" id="user-password" name="password" minlength="8">
+                </div>
+
+                <!--Date of B-->
+                <div class="form-group">
+                    <label for="dateB">Date of birth</label>
+                    <input type="date" id="dateB" name="DateOfB">
+                </div>
+
+                <!--altura-->
+                <div class="form-group">
+                    <label for="heigth">Height: </label>
+                    <input type="number" id="heigth" name="heigth">
+                </div>
+
+                <!--genero-->
+                <div class="form-group">
+                    <label>Gender: </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <!--sangre-->
+                <div class="form-group">
+                    <label for="blood-type">Blood Type: </label>
+                    <select id="blood-type" name="blood-type">
+                        <option value=""> Select </option>
+                        <option value="A+"> A+ </option>
+                        <option value="A-"> A- </option>
+
+                        <option value="B+"> B+ </option>
+                        <option value="B-"> B- </option>
+                        <option value="O+"> O+ </option>
+                        <option value="O-"> O- </option>
+                        <option value="AB+"> AB+ </option>
+                        <option value="AB-"> AB- </option>
+                    </select>
+                </div>
+                <!--historial-->
+                <div class="form-group">
+                    <label for="histMed">Medical History: </label>
+                    <textarea id="histMed" name="historialMed" placeholder="e.g. allergies, previous surgeries..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I accept the terms and conditions</label>
+                </div>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </body>

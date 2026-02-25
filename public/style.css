@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f9f3fa;
+  font-family: Georgia, serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h2 {
+  color: #8e54a7; /*ac6bc8*/
+  margin-bottom: 20px;
+  font-size: 33px;
+}
+
+#InfoP {
+  width: 100%;
+  max-width: 600px;
+}
+
+#InfoP fieldset {
+  background: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 15px black;
+  border-radius: 15px;
+  padding: 25px 25px;
+}
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #ac6bc8;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #dfc3eb;
+  border-radius: 15px;
+  font-family: Georgia, serif;
+}
+
+.form-group input[type="radio"] {
+  width: auto;
+  margin-right: 1px;
+}
+
+
+.form-group label[for="male"],
+.form-group label[for="female"],
+.form-group label[for="other"] {
+  display: inline;
+  margin-right: 15px;
+  font-weight: normal;
+  color: #444;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group:last-of-type label {
+  display: inline;
+  font-weight: normal;
+  color: #666;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 22px;
+  background: #815592;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #440b58;
+}
